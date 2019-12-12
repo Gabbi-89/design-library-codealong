@@ -15,20 +15,20 @@ export const App = () => {
   return (
     <Container>
       <SmallerCard
-        title="Hello world"
-        secondaryText="Secondary text goes here"
+        title="Bill Murray"
+        secondaryText="This is his card"
         thumbnail="https://www.fillmurray.com/128/128"
-        cover="https://www.fillmurray.com/640/360" />
+        cover="https://www.fillmurray.com/550/300" />
 
       <Card
         title="Second card"
-        secondaryText="This one has body!">
+        secondaryText="Not about bill murray">
         <p>Something something something</p>
       </Card>
 
       <Card>
-        <h1>I only have body!</h1>
-        <Button onClick={() => window.alert('Hej')}>Hello</Button>
+        <h1>This card doesn't have a title!</h1>
+        <Button onClick={() => window.alert('Hej')}>It has a button</Button>
       </Card>
     </Container>
   )
