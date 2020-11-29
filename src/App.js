@@ -16,6 +16,11 @@ export const App = () => {
         secondaryText='This is the seconday text'
         action1='OK'
       />
+      <Dialog 
+        secondaryText='This is the seconday text'
+        action1='NOT OK'
+        action2='OK'
+      />
       <ThinnerDialog 
         title='This is another dialog with another title'
         secondaryText='This is the seconday text'
