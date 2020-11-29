@@ -1,27 +1,35 @@
-import React from 'react'
-import styled from 'styled-components/macro'
-import { Card } from 'lib/Card'
-
-const ThinnerCard = styled(Card)`
-  width: 400px;
-`
+import React from 'react';
+import styled from 'styled-components/macro';
+import { Dialog } from 'lib/Dialog';
 
 export const App = () => {
   return (
     <div>
-      <ThinnerCard
-        coverImage="https://www.fillmurray.com/500/300"
-        thumbnailUrl="https://www.fillmurray.com/100/100"
-        title="This is the title"
-        secondaryText="Secondary title">
-        Child content here!
-      </ThinnerCard>
+      <Dialog 
+        title='This is the title' 
+        secondaryText='This is the secondary text'
+        action1='Action 1'
+        action2='Action 2'
+      />
+      <Dialog 
+        title='This is another dialog with another title'
+        secondaryText='This is the seconday text'
+        action1='OK'
+      />
+      <ThinnerDialog 
+        title='This is another dialog with another title'
+        secondaryText='This is the seconday text'
+        action1='Action 1'
+      />
 
-      <Card title="Only a title" secondaryText="And a second text!" />
-
-      <Card>
-        <h1>Hello from children!</h1>
-      </Card>
+      <Dialog title='Extra Dialog'>
+        <h1>Hello Children</h1>
+        <p>This has children props</p>
+      </Dialog>
     </div>
-  )
-}
+  );
+};
+
+const ThinnerDialog = styled(Dialog)`
+  width: 400px;
+`;
