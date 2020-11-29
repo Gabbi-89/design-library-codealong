@@ -68,6 +68,6 @@ const ChildrenContent = styled.div`
   border-radius: 4px;
   background: #f1f1f1;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 15px 15px 0;
   letter-spacing: 0.4px;
 `;
